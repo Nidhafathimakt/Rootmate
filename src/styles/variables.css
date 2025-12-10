@@ -1,0 +1,22 @@
+/* ================================
+CSS VARIABLES   DESIGN SYSTEM
+=================================== */
+
+:root{
+
+    /* ============================
+    COLOR PATTERN
+    =============================== */
+
+
+    /* primary-color */
+    --primary-color: #3498db;
+
+    /* secondary-color */
+
+    --color-secondary-light: #85c1e9;
+    --color-secondary-dark: #2e86c1;
+
+
+
+}
