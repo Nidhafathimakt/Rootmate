@@ -1,13 +1,17 @@
 
 import './App.css'
-
+import Planresults from './pages/Planresults'
+import {Routes, Route } from 'react-router-dom' 
+import Savedtrip from './pages/Savedtrip'
 function App() {
 
 
   return (
     <>
-      <h1>hii</h1>
-     
+     <Routes>
+      <Route path='/' element={<Savedtrip />}/>
+      <Route path='/Planresults' element={<Planresults />}/>
+     </Routes>
     </>
   )
 }
