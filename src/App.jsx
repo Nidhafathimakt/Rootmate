@@ -2,8 +2,8 @@ import './App.css'
 import "./Styles/global.css";
 // import { useContext } from 'react';
 import {Routes, Route} from "react-router-dom";
-import Itinerary from './pages/Itinerary';
-import HotelListing from './pages/HotelListing';
+import Itinerary from './pages/user/Itinerary';
+import HotelListing from './pages/user/HotelListing';
 
 function App() {
 
