@@ -4,6 +4,9 @@ import "./Styles/global.css";
 import {Routes, Route} from "react-router-dom";
 import Itinerary from './pages/user/Itinerary';
 import HotelListing from './pages/user/HotelListing';
+import Home from "./pages/home";
+
+import SearchPage from "./pages/SearchPage ";
 
 function App() {
 
@@ -11,11 +14,15 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/' element={<Itinerary/>}/>
+        <Route path='/itineray' element={<Itinerary/>}/>
         <Route path='/hotelListing' element={<HotelListing/>}/>
+          <Route path="/" element={<Home />} />
+   <Route path="/searchpage" element={<SearchPage />} />
       </Routes>
     </>
   )
 }
 
 export default App
+
+
