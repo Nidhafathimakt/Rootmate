@@ -1,6 +1,6 @@
 import React from "react";
 import SearchResultCard from "./SearchResultCard";
-import searchResultsMock from "../../data/searchResultsMock";
+import searchResultsMock from "../../../data/searchResultsMock";
 
 const SearchResults = () => {
   return (

@@ -1,57 +1,54 @@
-import './App.css'
+import "./App.css";
 import "./Styles/global.css";
 // import { useContext } from 'react';
-import {Routes, Route} from "react-router-dom";
-import Itinerary from './pages/user/Itinerary';
-import HotelListing from './pages/user/HotelListing';
-import Home from "./pages/home";
-import SearchPage from "./pages/SearchPage ";
-import Login from './User/Pages/Login'
-import SignUp from './User/Pages/SignUp'
-import Multidestination from './User/Pages/Multidestination'
-import HotelMenu from './User/Pages/HotelMenu'
-import Sidebar from './Components/Sidebar'
-import Ownerdashboard from './Components/Ownerdashboard'
-import Adminpage from './Admin/Pages/Adminpage'
-import AddListing from "./Pages/Addlisting";
-import MyListings from "./Pages/Mylisting";
-import ListingsApproval from "./Pages/ListingApproval";
-import AdminDashboard from "./Pages/AdminDashboard";
-import Tripplanner from "./Pages/Tripplanner";
+import { Routes, Route } from "react-router-dom";
+import Itinerary from "./pages/user/Itinerary";
+import HotelListing from "./pages/user/HotelListing";
+import Home from "./pages/user/Home";
+import SearchPage from "./pages/user/Searchpage/SearchPage ";
+import Login from "./pages/user/Login";
+import SignUp from "./pages/user/SignUp";
+import Multidestination from "./pages/user/Multidestination";
+import HotelMenu from "./pages/user/HotelMenu";
+import AddListing from "./pages/user/Addlisting";
+import MyListings from "./pages/user/Mylisting";
+import ListingsApproval from "./pages/user/ListingApproval";
+import AdminDashboard from "./pages/user/AdminDashboard";
+import Tripplanner from "./pages/user/Tripplanner";
 
-import Planresults from './pages/Planresults'
-import Savedtrip from './pages/Savedtrip'
+import Planresults from "./pages/user/Planresults";
+import Savedtrip from "./pages/user/Savedtrip";
+import UserProtectedRoute from "./components/protected-route/UserProtectedRoute";
+import AdminProtectedRoute from "./components/protected-route/AdminProtectedRoute";
 function App() {
-
-
   return (
     <>
       <Routes>
-        <Route path='/itineray' element={<Itinerary/>}/>
-        <Route path='/hotelListing' element={<HotelListing/>}/>
-        <Route path="/" element={<Home />} />
-        <Route path="/searchpage" element={<SearchPage />} />
-        <Route path='/login' element={<Login/>}/>
-        <Route path='/signup' element={<SignUp/>}/>
-        <Route path='/multidestination' element={<Multidestination/>}/>
-        <Route path='/hotelmenu' element={<HotelMenu/>}/>
-        <Route path='/sidebar' element={<Sidebar/>}/>
-        <Route path='/Ownerdash' element={<Ownerdashboard/>}/>
-        <Route path='/Adminpage' element={<Adminpage/>}/>
-        <Route path='/savedTrip' element={<Savedtrip />}/>
-      <Route path='/Planresults' element={<Planresults />}/>
-      <Route path="/listingApproval" element={<ListingsApproval/>} />
-        <Route path="/admindash" element={<AdminDashboard/>} />
-         <Route path="/addlisting" element={<AddListing/>} />
-          <Route path="/tripplanner" element={<Tripplanner/>} />
-           <Route path="/mylisting" element={<MyListings/>} />
-       
-      </Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
 
+        <Route element={<UserProtectedRoute />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/itineray" element={<Itinerary />} />
+          <Route path="/hotelListing" element={<HotelListing />} />
+          <Route path="/searchpage" element={<SearchPage />} />
+          <Route path="/multidestination" element={<Multidestination />} />
+          <Route path="/hotelmenu" element={<HotelMenu />} />
+          <Route path="/savedTrip" element={<Savedtrip />} />
+          <Route path="/planresults" element={<Planresults />} />
+          <Route path="/tripplanner" element={<Tripplanner />} />
+        </Route>
+        
+        <Route element={<AdminProtectedRoute/>} >
+
+          <Route path="/mylisting" element={<MyListings />} />
+          <Route path="/listingApproval" element={<ListingsApproval />} />
+          <Route path="/addlisting" element={<AddListing />} />
+        <Route path="/admindash" element={<AdminDashboard />} />
+        </Route>
+      </Routes>
     </>
-  )
+  );
 }
 
-export default App
-
-
+export default App;

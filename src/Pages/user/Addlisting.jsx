@@ -1,28 +1,9 @@
 import React from "react";
+import Sidebar from "../../components/admin/Sidebar";
 
 const AddListing = () => {
   return (
-    <div className="flex min-h-screen bg-gray-100">
-      
-      {/* Sidebar */}
-      <aside className="w-64 bg-white border-r px-6 py-6">
-        <h2 className="text-xl font-bold text-indigo-600 mb-8">Rootmate</h2>
-
-        <ul className="space-y-4 text-gray-600">
-          <li className="hover:text-indigo-600 cursor-pointer">Dashboard</li>
-          <li className="hover:text-indigo-600 cursor-pointer">My Listings</li>
-          <li className="text-indigo-600 font-medium flex items-center gap-2">
-            Add Listing
-          </li>
-          <li className="hover:text-indigo-600 cursor-pointer">Bookings</li>
-        </ul>
-
-        <div className="absolute bottom-6 left-6 text-gray-500 cursor-pointer">
-         Settings
-        </div>
-      </aside>
-
-      {/* Main Content */}
+  
       <main className="flex-1 p-8">
         <h1 className="text-2xl font-semibold">Add New Listing</h1>
         <p className="text-gray-500 mb-6">
@@ -139,7 +120,7 @@ const AddListing = () => {
           </button>
         </div>
       </main>
-    </div>
+   
   );
 };
 

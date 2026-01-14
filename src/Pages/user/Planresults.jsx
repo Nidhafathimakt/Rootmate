@@ -1,28 +1,9 @@
-import React from 'react'
+import React from "react";
 
 const Planresults = () => {
   return (
-   <div className="min-h-screen bg-gray-50 flex flex-col">
-     <header className="bg-white border-b">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-
-          <div className="flex items-center gap-2">
-            <span className="font-bold text-indigo-600 text-lg">Rootmate</span>
-          </div>
-
-          <nav className="hidden md:flex items-center gap-6 text-sm">
-            <a className="hover:text-indigo-600" href="#">Home</a>
-            <a className="hover:text-indigo-600" href="#">Plan a Trip</a>
-            <a className="hover:text-indigo-600" href="#">Destinations</a>
-            <a className="text-indigo-600 font-medium" href="#">Saved Trips</a>
-            <a className="hover:text-indigo-600" href="#">Login</a>
-          </nav>
-
-        </div>
-      </header>
-
+    <div className="min-h-screen bg-gray-50 flex flex-col">
       <main className="max-w-7xl mx-auto w-full px-6 py-10 flex-1">
-
         <h1 className="text-2xl font-semibold mb-1">
           Your Personalized Trip Plans
         </h1>
@@ -34,7 +15,6 @@ const Planresults = () => {
 
         {/* Cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-
           {/* Card 1 */}
           <div className="bg-white rounded-2xl shadow-sm border overflow-hidden">
             <div className="h-44 w-full overflow-hidden">
@@ -176,50 +156,8 @@ const Planresults = () => {
           </button>
         </div>
       </main>
+    </div>
+  );
+};
 
-      <footer className="border-t bg-white mt-10">
-        <div className="max-w-7xl mx-auto px-6 py-10 grid gap-10 md:grid-cols-4">
-          <div>
-            <span className="font-semibold text-lg">WanderPlan</span>
-            <p className="text-sm text-gray-600 mt-2">
-              Your seamless travel planning and booking partner.
-            </p>
-          </div>
-
-          <div>
-            <h4 className="font-semibold mb-3">Company</h4>
-            <ul className="text-sm text-gray-600 space-y-1">
-              <li>About Us</li>
-              <li>Careers</li>
-              <li>Press</li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-semibold mb-3">Support</h4>
-            <ul className="text-sm text-gray-600 space-y-1">
-              <li>Help Center</li>
-              <li>Contact Us</li>
-              <li>FAQs</li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-semibold mb-3">Legal</h4>
-            <ul className="text-sm text-gray-600 space-y-1">
-              <li>Privacy Policy</li>
-              <li>Terms of Service</li>
-              <li>Cookie Policy</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="text-center text-xs text-gray-500 pb-8">
-          © 2025 WanderPlan. All rights reserved.
-        </div>
-        </footer>
-        </div>
-  )
-}
-
-export default Planresults
+export default Planresults;

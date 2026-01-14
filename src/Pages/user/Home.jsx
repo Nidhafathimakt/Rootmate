@@ -1,15 +1,13 @@
-import FeaturedDestinations from "../components/Homepage/FeaturedDestinations";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import PopularItineraries from "../components/Homepage/PopularItineraries";
-import SearchBar from "../components/Homepage/SearchBar";
+import FeaturedDestinations from "../user/Homepage/FeaturedDestinations";
+import PopularItineraries from "../user/Homepage/PopularItineraries";
+import SearchBar from "../user/Homepage/SearchBar";
 import React from "react";
 
 
 const Home = () => {
   return (
     <>
-      <Navbar />
+      
 
       {/* Hero Section */}
       <section
@@ -52,7 +50,7 @@ const Home = () => {
         <PopularItineraries/>
 
       </section>
-      <Footer/>
+    
     </>
   );
 };

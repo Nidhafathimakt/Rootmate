@@ -5,25 +5,7 @@ const Tripplanner = () => {
   return (
     <div className="min-h-screen bg-gray-50">
      
-      <header className="bg-white border-b px-8 py-4 flex items-center justify-between">
-        <div className="flex items-center gap-2 font-semibold text-indigo-600">
-          <h4>Rootmate</h4> 
-        </div>
-
-        <nav className="flex gap-6 text-sm text-gray-600">
-          <span>Home</span>
-          <span className="text-indigo-600 font-medium">Plan a Trip</span>
-          <span>Destinations</span>
-          <span>Saved Trips</span>
-        </nav>
-
-        <div className="flex gap-3">
-          <button className="border px-4 py-1 rounded-md">Login</button>
-          <button className="bg-indigo-600 text-white px-4 py-1 rounded-md">
-            Signup
-          </button>
-        </div>
-      </header>
+    
 
       {/* Main Content */}
       <div className="max-w-7xl mx-auto p-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
