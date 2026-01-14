@@ -13,8 +13,11 @@ import HotelMenu from './User/Pages/HotelMenu'
 import Sidebar from './Components/Sidebar'
 import Ownerdashboard from './Components/Ownerdashboard'
 import Adminpage from './Admin/Pages/Adminpage'
-
-
+import AddListing from "./Pages/Addlisting";
+import MyListings from "./Pages/Mylisting";
+import ListingsApproval from "./Pages/ListingApproval";
+import AdminDashboard from "./Pages/AdminDashboard";
+import Tripplanner from "./Pages/Tripplanner";
 
 import Planresults from './pages/Planresults'
 import Savedtrip from './pages/Savedtrip'
@@ -35,8 +38,13 @@ function App() {
         <Route path='/sidebar' element={<Sidebar/>}/>
         <Route path='/Ownerdash' element={<Ownerdashboard/>}/>
         <Route path='/Adminpage' element={<Adminpage/>}/>
-        <Route path='/' element={<Savedtrip />}/>
+        <Route path='/savedTrip' element={<Savedtrip />}/>
       <Route path='/Planresults' element={<Planresults />}/>
+      <Route path="/listingApproval" element={<ListingsApproval/>} />
+        <Route path="/admindash" element={<AdminDashboard/>} />
+         <Route path="/addlisting" element={<AddListing/>} />
+          <Route path="/tripplanner" element={<Tripplanner/>} />
+           <Route path="/mylisting" element={<MyListings/>} />
        
       </Routes>
 
